@@ -1,0 +1,22 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Septiembre 2024",
+    title: "Trainee",
+    company: "Ctgalega",
+    description:
+      "Desarrollo de una aplicación ERP para la gestión de una cafetería. Migración de un sistema de control interno de incidencias en redes eléctricas (SIRE)",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
