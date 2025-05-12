@@ -8,6 +8,9 @@ import VUE from "./icons/Vue.astro"
 import Vite from "./icons/Vite.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
+import TypeScript from "./icons/TypeScript.astro"
+import NestJS from "./icons/NestJS.astro"
+import React from "./icons/React.astro"
 
 const TAGS = {
   TAILWIND: {
@@ -40,16 +43,31 @@ const TAGS = {
     class: "bg-[#646CFF] text-white",
     icon: Vite,
   },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-[#007ACC] text-white",
+    icon: TypeScript,
+  },
+  NESTJS: {
+    name: "NestJS",
+    class: "bg-[#E0234E] text-white",
+    icon: NestJS,
+  },
+  REACT: {
+    name: "React",
+    class: "bg-[#61DAFB] text-black",
+    icon: React,
+  }
 }
 const PROJECTS = [
   {
-    title: "ERGO - AI Chatbot",
+    title: "AI Chatbot",
     description:
-      "Aplicación que busca entablar relaciones entre Humano e IA. Hecha con Python, JavaScript, Vue, Vite y Tailwind ",
-    link: "https://ergo-kappa.vercel.app/",
-    github: "https://github.com/RoberAF/ergo",
+      "Chatbot IA multi-personalidad con plantillas predefinidas, sistema de suscripción, autenticación completa y pagos con Stripe. Built with Next.js 15 + NestJS + OpenAI API ",
+    link: "https://app.roberx.dev/",
+    github: "https://github.com/RoberAF/chatbot",
     image: "/projects/ergo.png",
-    tags: [TAGS.PYTHON ,TAGS.JAVASCRIPT, TAGS.VUE, TAGS.VITE,TAGS.TAILWIND],
+    tags: [TAGS.TYPESCRIPT ,TAGS.NESTJS, TAGS.REACT, TAGS.TAILWIND],
   },
   {
     title: "A Tenda - Tienda online",
